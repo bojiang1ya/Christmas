@@ -1,0 +1,166 @@
+
+/* 向上滑动 */
+.page-moveToTop{
+  animation: moveToTop 0.6s ease both;
+}
+.page-moveFromBottom{
+  animation: moveFromBottom 0.6s ease both;
+}
+
+/* 向下滑动 */
+.page-moveToBottom{
+  animation: moveToBottom 0.6s ease both;
+}
+.page-moveFromTop{
+  animation: moveFromTop 0.6s ease both;
+}
+
+/* 向左滑动 */
+.page-moveToLeft{
+  animation: moveToLeft 0.6s ease both;
+}
+.page-moveFromRight{
+  animation: moveFromRight 0.6s ease both;
+}
+
+/* 向右滑动 */
+.page-moveToRight{
+  animation: moveToRight 0.6s ease both;
+}
+.page-moveFromLeft{
+  animation: moveFromLeft 0.6s ease both;
+}
+
+
+@keyframes moveToTop {
+  from{}
+  to{transform: translateY(-100%)}
+}
+@keyframes moveFromBottom {
+  from{transform: translateY(100%)}
+  to{}
+}
+
+@keyframes moveToBottom {
+  from{}
+  to{transform: translateY(100%)}
+}
+@keyframes moveFromTop {
+  from{transform: translateY(-100%)}
+  to{}
+}
+
+@keyframes moveToLeft{
+  from{}
+  to{transform: translateX(-100%)}
+}
+@keyframes moveFromRight {
+  from{transform: translateX(100%)}
+  to{}
+}
+
+@keyframes moveToRight{
+  from{}
+  to{transform: translateX(100%)}
+}
+@keyframes moveFromLeft {
+  from{transform: translateX(-100%)}
+  to{}
+}
+
+
+/* 通用--箭头动画 */
+.page-moveIconUp{
+  animation: moveIconUp 1.5s ease infinite both;
+}
+@keyframes moveIconUp{
+  0%{transform: translateY(80%);opacity: 0;}
+  50%{opacity: 1;}
+  100%{transform: translateY(-80%);opacity: 0;}
+}
+
+/* 第一屏--雪橇动画 */
+.page-moveSleigh{
+  animation: moveSleigh 4s ease both;
+}
+@keyframes moveSleigh{
+  from{transform: translateX(50%)}
+  to{transform: translateX(-400%)}
+}
+
+/* 圣诞快乐 */
+.font-moveJump1{animation:moveJump 1s ease both;}
+.font-moveJump2{animation:moveJump 1s 1s ease both;}
+.font-moveJump3{animation:moveJump 1s 2s ease both;}
+.font-moveJump4{animation:moveJump 1s 3s ease both;}
+.font-moveJump5{animation:moveJump 1s 4s ease both;}
+.font-moveJump6{animation:moveJump 1s 5s ease both;}
+.font-moveJump7{animation:moveJump 1s 6s ease both;}
+
+/* 第三屏文字 */
+.page-fontShow1{animation:fontShow 0.5s 0.5s ease both;}
+.page-fontShow2{animation:fontShow 0.5s 1s ease both;}
+.page-fontShow3{animation:fontShow 0.5s 1.5s ease both;}
+.page-fontShow4{animation:fontShow 0.5s 2s ease both;}
+.page-fontShow5{animation:fontShow 0.5s 2.5s ease both;}
+@keyframes fontShow{
+  from{opacity: 0;}
+  to{}
+}
+
+/* 第三屏顶部圆球波浪 */
+.page-moveWave{animation:moveWave 2s infinite alternate linear;}
+@keyframes moveWave{
+  from{transform: translateY(-20%)}
+  to{transform: translateY(0%)}
+}
+/* 第三屏星光闪烁 */
+.page-starTwinkle{ animation:starTwinkle 1s infinite alternate linear;}
+@keyframes starTwinkle{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+/* 第四屏文字 */
+
+
+/* 第五屏文字 */
+.page5-Jump{
+   animation:moveJump 2s 1s ease both;
+}
+@keyframes moveJump{
+  0%{transform: translateY(-100px);opacity: 0;}
+  30%{transform: translateY(10px);opacity: 0.7;}
+  60%{transform: translateY(-20px);opacity: 0.7;}
+  75%{transform: translateY(10px);opacity:1;}
+  100%{opacity:1;}
+}
+
+/* 旋转动画 */
+.page-moveRotate{
+  animation: moveRotate 0.6s ease both;
+  transform-origin:50% 50%;
+}
+@keyframes moveRotate{
+  form{transform: rotateY(90deg)}
+  to{}
+}
+
+
+/* 缩放动画 */
+.page-scaleUp{
+  animation: scaleUp 0.5s ease both;
+}
+@keyframes scaleUp{
+  from{transform: scale(0.2)}
+  to{}
+}
+
+/* 背景动画 */
+.page-moveBg{
+  animation: moveBg 4.5s ease alternate infinite both;
+}
+@keyframes moveBg{
+  from{background-position: 20px 20px;}
+  to{}
+}
